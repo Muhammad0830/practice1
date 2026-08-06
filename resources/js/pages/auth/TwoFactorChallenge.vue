@@ -14,7 +14,7 @@ import { computed, ref, watchEffect } from 'vue';
 import type { TwoFactorConfigContent } from '@/types';
 
 const showRecoveryInput = ref<boolean>(false);
-const code = ref<string>('');
+// const code = ref<string>('');
 
 const authConfigContent = computed<TwoFactorConfigContent>(() => {
     if (showRecoveryInput.value) {
