@@ -4,10 +4,11 @@ namespace App\Http\Controllers\Practice;
 
 use App\Http\Controllers\Controller;
 use Inertia\Inertia;
+use Inertia\Response;
 
 class PracticeController extends Controller
 {
-    public function get()
+    public function get(): Response
     {
         return Inertia::render('Practice', [
             'data' => [
