@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { route } from 'ziggy-js';
 import { Link } from '@inertiajs/vue3';
+import { route } from 'ziggy-js';
 import AppLogoIcon from '@/components/AppLogoIcon.vue';
 
 defineProps<{

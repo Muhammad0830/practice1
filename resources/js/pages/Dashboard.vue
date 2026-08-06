@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { route } from 'ziggy-js';
 import { Head } from '@inertiajs/vue3';
+import { route } from 'ziggy-js';
 import PlaceholderPattern from '@/components/PlaceholderPattern.vue';
 
 defineOptions({

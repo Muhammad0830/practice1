@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { route } from 'ziggy-js';
 import { Link } from '@inertiajs/vue3';
+import { route } from 'ziggy-js';
 import Heading from '@/components/Heading.vue';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';

@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { Head } from '@inertiajs/vue3';
 import { route } from 'ziggy-js';
 import TextLink from '@/components/TextLink.vue';
-import { Head } from '@inertiajs/vue3';
 // import { Form } from '@inertiajs/vue3';
 // import InputError from '@/components/InputError.vue';
 // import { Button } from '@/components/ui/button';

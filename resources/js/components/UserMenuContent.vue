@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { route } from 'ziggy-js';
 import { Link, router } from '@inertiajs/vue3';
 import { LogOut, Settings } from '@lucide/vue';
+import { route } from 'ziggy-js';
 import {
     DropdownMenuGroup,
     DropdownMenuItem,
