@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Head } from '@inertiajs/vue3';
-import { ref } from 'vue';
+// import { ref } from 'vue';
 // import { Form } from '@inertiajs/vue3';
 // import InputError from '@/components/InputError.vue';
 // import PasswordInput from '@/components/PasswordInput.vue';
@@ -17,7 +17,7 @@ defineOptions({
     },
 });
 
-const props = defineProps<{
+defineProps<{
     token: string;
     email: string;
     passwordRules: string;
