@@ -49,7 +49,6 @@ watchEffect(() => {
 </script>
 
 <template>
-
     <Head title="Two-factor authentication" />
 
     <div class="space-y-6">

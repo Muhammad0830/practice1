@@ -23,7 +23,6 @@ defineOptions({
 </script>
 
 <template>
-
     <Head title="Register" />
 
     <!-- <Form

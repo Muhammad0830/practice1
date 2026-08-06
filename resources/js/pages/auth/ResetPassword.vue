@@ -27,7 +27,6 @@ defineProps<{
 </script>
 
 <template>
-
     <Head title="Reset password" />
 
     <!-- <Form

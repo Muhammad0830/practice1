@@ -31,7 +31,11 @@ defineProps<Props>();
     <DropdownMenuSeparator />
     <DropdownMenuGroup>
         <DropdownMenuItem :as-child="true">
-            <Link class="block w-full cursor-pointer" :href="route('profile-edit')" prefetch>
+            <Link
+                class="block w-full cursor-pointer"
+                :href="route('profile-edit')"
+                prefetch
+            >
                 <Settings class="mr-2 h-4 w-4" />
                 Settings
             </Link>
@@ -39,8 +43,13 @@ defineProps<Props>();
     </DropdownMenuGroup>
     <DropdownMenuSeparator />
     <DropdownMenuItem :as-child="true">
-        <Link class="block w-full cursor-pointer" :href="route('logout')" @click="handleLogout" as="button"
-            data-test="logout-button">
+        <Link
+            class="block w-full cursor-pointer"
+            :href="route('logout')"
+            @click="handleLogout"
+            as="button"
+            data-test="logout-button"
+        >
             <LogOut class="mr-2 h-4 w-4" />
             Log out
         </Link>
