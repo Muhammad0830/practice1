@@ -12,8 +12,8 @@ class PracticeController extends Controller
         return Inertia::render('Practice', [
             'data' => [
                 ['id' => 0, 'title' => 'title1'],
-                ['id' => 1, 'title' => 'title2']
-            ]
+                ['id' => 1, 'title' => 'title2'],
+            ],
         ]);
     }
 }
