@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { route } from 'ziggy-js';
 import { Link, router } from '@inertiajs/vue3';
 import { LogOut, Settings } from '@lucide/vue';
 import {
@@ -9,7 +10,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 // import UserInfo from '@/components/UserInfo.vue';
 import type { User } from '@/types';
-import { route } from 'ziggy-js';
 
 type Props = {
     user: User;

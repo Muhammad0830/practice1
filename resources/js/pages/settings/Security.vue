@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { route } from 'ziggy-js';
 import { Form, Head } from '@inertiajs/vue3';
 import SecurityController from '@/actions/App/Http/Controllers/Settings/SecurityController';
 import Heading from '@/components/Heading.vue';
@@ -10,7 +11,6 @@ import ManageTwoFactor from '@/components/ManageTwoFactor.vue';
 import PasswordInput from '@/components/PasswordInput.vue';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { route } from 'ziggy-js';
 // import { edit } from '@/routes/security';
 
 type Props = {
@@ -45,10 +45,10 @@ defineOptions({
         <Form v-bind="SecurityController.update.form()" :options="{
             preserveScroll: true,
         }" reset-on-success :reset-on-error="[
-                'password',
-                'password_confirmation',
-                'current_password',
-            ]" class="space-y-6" v-slot="{ errors, processing }">
+            'password',
+            'password_confirmation',
+            'current_password',
+        ]" class="space-y-6" v-slot="{ errors, processing }">
             <div class="grid gap-2">
                 <Label for="current_password">Current password</Label>
                 <PasswordInput id="current_password" name="current_password" class="mt-1 block w-full"

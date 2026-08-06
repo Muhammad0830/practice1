@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { route } from 'ziggy-js';
 import { Head } from '@inertiajs/vue3';
 import AppearanceTabs from '@/components/AppearanceTabs.vue';
 import Heading from '@/components/Heading.vue';
-import { route } from 'ziggy-js';
 // import { edit } from '@/routes/appearance';
 
 defineOptions({

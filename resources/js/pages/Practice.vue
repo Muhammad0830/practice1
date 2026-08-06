@@ -11,7 +11,7 @@ function decrement() {
     count.value--;
 }
 
-const props = defineProps<{
+defineProps<{
     data?: { id: number; title: string }[];
 }>();
 
@@ -30,7 +30,7 @@ const props = defineProps<{
             <button class="border rounded px-2 py-.5" @click="increment">increment</button>
         </div>
 
-        <div class="flex gap-2 items-center" v-for="item in data" :key="item.id">
+        <div v-for="item in data" :key="item.id" class="flex gap-2 items-center">
             <span>{{ item.id + 1 }}</span>
             <span>{{ item.title }}</span>
         </div>

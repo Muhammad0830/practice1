@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { route } from 'ziggy-js';
 import { Link } from '@inertiajs/vue3';
 import { BookOpen, FolderGit2, LayoutGrid } from '@lucide/vue';
 import AppLogo from '@/components/AppLogo.vue';
@@ -15,7 +16,6 @@ import {
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import type { NavItem } from '@/types';
-import { route } from 'ziggy-js';
 
 const mainNavItems: NavItem[] = [
     {

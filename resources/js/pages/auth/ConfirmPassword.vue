@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { Form, Head } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 import {
     index as confirmOptions,
     store as confirmStore,
 } from '@/actions/Laravel/Passkeys/Http/Controllers/PasskeyConfirmationController';
-import InputError from '@/components/InputError.vue';
 import PasskeyVerify from '@/components/PasskeyVerify.vue';
-import PasswordInput from '@/components/PasswordInput.vue';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { Spinner } from '@/components/ui/spinner';
+// import { Form } from '@inertiajs/vue3';
+// import InputError from '@/components/InputError.vue';
+// import PasswordInput from '@/components/PasswordInput.vue';
+// import { Button } from '@/components/ui/button';
+// import { Label } from '@/components/ui/label';
+// import { Spinner } from '@/components/ui/spinner';
 
 defineOptions({
     layout: {
@@ -21,17 +22,13 @@ defineOptions({
 </script>
 
 <template>
+
     <Head title="Confirm password" />
 
-    <PasskeyVerify
-        :routes="{
-            options: confirmOptions(),
-            submit: confirmStore(),
-        }"
-        label="Confirm with passkey"
-        loading-label="Confirming..."
-        separator="Or confirm with password"
-    />
+    <PasskeyVerify :routes="{
+        options: confirmOptions(),
+        submit: confirmStore(),
+    }" label="Confirm with passkey" loading-label="Confirming..." separator="Or confirm with password" />
 
     <!-- <Form
         v-bind="store.form()"

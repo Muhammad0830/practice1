@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { Form, Head, setLayoutProps } from '@inertiajs/vue3';
+import { Head, setLayoutProps } from '@inertiajs/vue3';
 import { computed, ref, watchEffect } from 'vue';
-import InputError from '@/components/InputError.vue';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import {
-    InputOTP,
-    InputOTPGroup,
-    InputOTPSlot,
-} from '@/components/ui/input-otp';
+// import { Form } from '@inertiajs/vue3';
+// import InputError from '@/components/InputError.vue';
+// import { Button } from '@/components/ui/button';
+// import { Input } from '@/components/ui/input';
+// import {
+//     InputOTP,
+//     InputOTPGroup,
+//     InputOTPSlot,
+// } from '@/components/ui/input-otp';
 // import { store } from '@/routes/two-factor/login';
 import type { TwoFactorConfigContent } from '@/types';
 
@@ -48,6 +49,7 @@ const toggleRecoveryMode = (clearErrors: () => void): void => {
 </script>
 
 <template>
+
     <Head title="Two-factor authentication" />
 
     <div class="space-y-6">
@@ -98,7 +100,7 @@ const toggleRecoveryMode = (clearErrors: () => void): void => {
             </Form>
         </template>
 
-        <template v-else>
+<template v-else>
             <Form
                 v-bind="store.form()"
                 class="space-y-4"
