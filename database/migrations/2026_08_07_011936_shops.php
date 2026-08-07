@@ -19,7 +19,7 @@ return new class extends Migration
             $table->time('opens_at');
             $table->time('closes_at');
             $table->timestamps();
-            
+
             $table->index('user_id');
         });
     }
