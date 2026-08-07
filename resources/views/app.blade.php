@@ -29,6 +29,38 @@
         html.dark {
             background-color: oklch(0.145 0 0);
         }
+
+        .app-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8fafc;
+        }
+
+        .dark .app-loader {
+            background-color: black
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .dark .spinner {
+            border: 4px solid #161515;
+            border-top-color: #3b82f6;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -45,7 +77,12 @@
 </head>
 
 <body class="font-sans antialiased">
-    <x-inertia::app />
+    <div id="app" data-page="{{ json_encode($page) }}">
+        <div class="app-loader">
+            <div class="spinner"></div>
+        </div>
+        <x-inertia::app />
+    </div>
 </body>
 
 </html>
